@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>{{ subtitle }}</h2>
+    <h2 v-show='showText'>{{ subtitle }}</h2>
   </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
   data () {
     return {
       msg: 'HelloWorld.vue file is changed!',
-      subtitle: "This is subtitle!"
+      subtitle: 'This is subtitle!',
+      showText: false
     }
   }
 }
