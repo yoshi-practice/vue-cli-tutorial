@@ -2,10 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2 v-show='showText'>{{ subtitle }}</h2>
+    <button v-on:click="toggle">Show text!</button>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'HelloWorld',
   data () {
@@ -14,7 +16,11 @@ export default {
       subtitle: 'This is subtitle!',
       showText: false
     }
+  },methods: {
+    toggle: function() {
+      this.showText = !this.showText
   }
+}
 }
 </script>
 
