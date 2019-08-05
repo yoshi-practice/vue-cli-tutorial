@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>{{ subtitle }}</h2>
   </div>
 </template>
 
@@ -9,7 +10,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'HelloWorld.vue file is changed!'
+      msg: 'HelloWorld.vue file is changed!',
+      subtitle: "This is subtitle!"
     }
   }
 }
